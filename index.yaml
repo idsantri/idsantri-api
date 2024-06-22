@@ -11,7 +11,7 @@ paths:
         '200':
           description: Successful operation
     post:
-      summary: Create example resource
+      summary: Create example resource files
       requestBody:
         content:
           application/json:
