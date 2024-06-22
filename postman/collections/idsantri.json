@@ -1,0 +1,7391 @@
+{
+	"info": {
+		"_postman_id": "c93a5599-a27e-44ba-8282-f06fe14851af",
+		"name": "idsantri",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "23593345-c93a5599-a27e-44ba-8282-f06fe14851af"
+	},
+	"item": [
+		{
+			"name": "setup",
+			"item": [
+				{
+					"name": "1 migrate",
+					"id": "09b20d24-9e24-4380-8072-fac98b7e6f02",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/setup/migrate",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"setup",
+								"migrate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2 roles",
+					"id": "d5421c16-4007-4fe7-9f0b-a114e1759e00",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/setup/roles",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"setup",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3 functions",
+					"id": "327c7baa-cb53-431b-b1dc-20dec68acc45",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/setup/functions",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"setup",
+								"functions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3 views",
+					"id": "f5a96b00-004c-47d6-a3b4-89bdfe9eaac7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/setup/views",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"setup",
+								"views"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4 triggers",
+					"id": "d78b1d30-72e3-4af8-9032-745365b3a026",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/setup/triggers",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"setup",
+								"triggers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "5 procedures",
+					"id": "e9aa36db-0fbb-4b9b-afe2-53aeb2614ed6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/setup/procedures",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"setup",
+								"procedures"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "d1240d47-e4a4-4106-8701-f40e4d720109"
+		},
+		{
+			"name": "config",
+			"item": [
+				{
+					"name": "profiles",
+					"id": "4b86063c-b8d0-4ed0-91e4-3da06b9060df",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/config/profiles",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"config",
+								"profiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profiles",
+					"id": "71893b2f-ac3a-437b-84d8-b3f2486a8f3e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pesantren\": [\r\n        \"Pondok Pesantren\",\r\n        \"Syaichona Moh Cholil\",\r\n        \"PPSMCH\"\r\n    ],\r\n    \"madrasah\": [\r\n        \"Madrasah\",\r\n        \"Diniyah Salafiyah al-Maarif\",\r\n        \"MDS\"\r\n    ],\r\n    \"alamat\": [\r\n        \"Jl. KH. Moh. Kholil I/6, Demangan Barat, Kab. Bangkalan, Jawa Timur 69115\",\r\n        \"Email: pp.syaichona@gmail.com WA: 087870145778\",\r\n        \"Bangkalan\"\r\n    ],\r\n    \"personalia\": {\r\n        \"pengasuh\": \"KH Fakhrud\",\r\n        \"ketua\": \"Ra Nasih\",\r\n        \"sekretaris\": \"Zainal\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/config/profiles",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"config",
+								"profiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reports",
+					"id": "03eab29f-2af0-48b6-b955-1d99c234b039",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "file",
+							"file": {}
+						},
+						"url": {
+							"raw": "{{url}}/config/reports",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"config",
+								"reports"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reports/keterangan-berhenti",
+					"id": "f5202895-2511-40a3-93d5-0653c028d51a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "file",
+							"file": {}
+						},
+						"url": {
+							"raw": "{{url}}/config/reports/keterangan-berhenti",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"config",
+								"reports",
+								"keterangan-berhenti"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reports",
+					"id": "28c6d9bd-b35e-4f86-8f32-2e34e19abf5d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"registrasi\": {\r\n        \"footer\": \"<p><em> Lembar ini diberikan kepada:</em> <br />1) Wali Kelas; 2) Yang Bersangkutan.</p>\"\r\n    },\r\n    \"permohonan_berhenti\": {\r\n        \"footer\": \"<p>Keterangan:</p><ul><li>Lembar 1 Kantor Sekretariat; Lembar 2 Kantor Daerah; Lembar 3 Kantor Madrasah; Lembar 4 yang bersangkutan</li><li>Proses pengurusan surat ini harus selesai dalam jangka 7 hari sejak tanggal di dalam surat</li></ul>\"\r\n    },\r\n    \"keterangan_berhenti\": {\r\n        \"footer\": \"<p><strong>Tembusan</strong></p><p>Lembar 1 Kantor Sekretariat; Lembar 2 Kantor Daerah; Lembar 3 Kantor Madrasah; Lembar 4 yang bersangkutan.</p><p><strong>Keterangan</strong></p><p>Yang bersangkutan diperkenankan bermukim di Pondok Pesantren maksimal 3 hari sejak surat ini dikeluarkan</p>\"\r\n    },\r\n    \"ugt_surat_tugas\": {\r\n        \"footer\": \"<p><strong>Surat ini diberikan kepada:</strong></p><p>1) Guru Tugas bersangkutan; 2) Wali Guru Tugas; 3) Penanggung Jawab Guru Tugas; 4) Arsip</p>\"\r\n    },\r\n    \"ugt_kuitansi\": {\r\n        \"footer\": \"<ul><li>Terimakasih atas kepercayaannya</li><li>Lembar ini sah apabila distempel dan ditandatangan</li></ul>\"\r\n    },\r\n    \"izin_madrasah\": {\r\n        \"footer\": \"\"\r\n    },\r\n    \"izin_pesantren\": {\r\n        \"footer\": \"<ul><li>Surat ini harus diserahkan kembali kepada pihak keamanan setelah kembali ke Pesantren paling lambat pukul 21.00 WIB pada hari yang telah ditentukan</li><li>Lembar 1: Santri, Lembar 2: Madrasah, Lembar 3: Sekolah Formal, Lembar 4: Daerah</li></ul>\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/config/reports",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"config",
+								"reports"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reports/keterangan-berhenti",
+					"id": "287f2dde-e615-4b26-a933-3dbe02e12f69",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"footer\": \"<p><strong>Teembusan</strong></p><p>Lembar 11 Kantor Sekretariat; Lembar 2 Kantor Daerah; Lembar 3 Kantor Madrasah; Lembar 4 yang bersangkutan.</p><p><strong>Keterangan</strong></p><p>Yang bersangkutan diperkenankan bermukim di Pondok Pesantren maksimal 3 hari sejak surat ini dikeluarkan</p>\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/config/reports/keterangan-berhenti",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"config",
+								"reports",
+								"keterangan-berhenti"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "b1e6c33f-8181-420b-9049-891a49df6392"
+		},
+		{
+			"name": "export",
+			"item": [
+				{
+					"name": "santri",
+					"id": "0f66a68a-6334-4a02-b834-0ba5bde669f2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/export/santri?aktif=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"export",
+								"santri"
+							],
+							"query": [
+								{
+									"key": "aktif",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "kelas",
+					"id": "7b233231-2470-430b-b83f-d1e33105835b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/export/kelas?th_ajaran_h=1440-1441&tingkat_id=ibt",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"export",
+								"kelas"
+							],
+							"query": [
+								{
+									"key": "th_ajaran_h",
+									"value": "1440-1441"
+								},
+								{
+									"key": "tingkat_id",
+									"value": "ibt"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "iuran",
+					"id": "c5039d89-ca01-419a-ae7f-487b66cdc86b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/export/iuran?th_ajaran_h=1441-1442&kasir=rofik&santri_id=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"export",
+								"iuran"
+							],
+							"query": [
+								{
+									"key": "start_date",
+									"value": "2020-06-23",
+									"disabled": true
+								},
+								{
+									"key": "end_date",
+									"value": "2020-06-23",
+									"disabled": true
+								},
+								{
+									"key": "th_ajaran_h",
+									"value": "1441-1442"
+								},
+								{
+									"key": "kasir",
+									"value": "rofik"
+								},
+								{
+									"key": "santri_id",
+									"value": ""
+								},
+								{
+									"key": "iuran",
+									"value": "kesehatan",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "49d9cacf-e646-4e03-8bed-def873f5689e"
+		},
+		{
+			"name": "wali",
+			"item": [
+				{
+					"name": "index",
+					"id": "9230b616-d7af-44a8-a053-b21ab3a8b1ba",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/wali",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"wali"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"id": "9ef153a6-d0a5-469a-89b1-56d65e454fe1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/wali/5280",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"wali",
+								"5280"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "id/santri",
+					"id": "c3c70a6e-6472-45a7-a417-0d9625980f47",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/wali/5280/santri",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"wali",
+								"5280",
+								"santri"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"id": "90d55ded-9527-4677-9a90-2a80fe4a4718",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\":\"tes wali lagsi\",\r\n    \"sex\":\"L\",\r\n    \"id\":\"234523\",\r\n    \"nik\":\"1234567890123455\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/wali",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"wali"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"id": "455bbc0f-8e32-4a41-a7fe-3e39d2de0234",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":234,\r\n    \"nama\":\"walid ul a\",\r\n    \"sex\":\"L\",\r\n    \"nik\": \"1234567890123455\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/wali/5471",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"wali",
+								"5471"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"id": "cbf3f554-04d9-4704-9419-734463aa7e4b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ayah\":\"update\",\r\n    \"ibu\":\"iddate\",\r\n    \"a_nik\":\"0987654321123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/wali/4469",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"wali",
+								"4469"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "cd0652ed-2701-4bf3-bdb8-e268929accd8"
+		},
+		{
+			"name": "absensi",
+			"item": [
+				{
+					"name": "sekolah | musyawarah",
+					"item": [
+						{
+							"name": "index",
+							"id": "92f9ddf2-a591-4ceb-85f4-de761d890a90",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/absensi/sekolah?th_ajaran_h=1444-1445&tingkat_id=Ibt&kelas=1-c&bulan_ujian=12-1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"absensi",
+										"sekolah"
+									],
+									"query": [
+										{
+											"key": "th_ajaran_h",
+											"value": "1444-1445"
+										},
+										{
+											"key": "tingkat_id",
+											"value": "Ibt"
+										},
+										{
+											"key": "kelas",
+											"value": "1-c"
+										},
+										{
+											"key": "bulan_ujian",
+											"value": "12-1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update (dep)",
+							"id": "8b77a8e6-13e1-4fb5-9743-31f3f0ff3f88",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"absensi\": [\r\n        {\r\n            \"santri_id\": 8856,\r\n            \"no_absen\": null,\r\n            \"nama\": \"Zainal Arifin\",\r\n            \"kelas\": \"1-C\",\r\n            \"id\": 1125,\r\n            \"kelas_id\": 8129,\r\n            \"bulan_ujian\": \"12-1\",\r\n            \"p1s\": 1,\r\n            \"p1i\": null,\r\n            \"p1a\": null,\r\n            \"p1t\": null,\r\n            \"p2s\": null,\r\n            \"p2i\": null,\r\n            \"p2a\": null,\r\n            \"p2t\": null,\r\n            \"p3s\": null,\r\n            \"p3i\": null,\r\n            \"p3a\": null,\r\n            \"p3t\": null,\r\n            \"p4s\": null,\r\n            \"p4i\": null,\r\n            \"p4a\": null,\r\n            \"p4t\": null,\r\n            \"p5s\": null,\r\n            \"p5i\": null,\r\n            \"p5a\": null,\r\n            \"p5t\": null\r\n        },\r\n        {\r\n            \"santri_id\": 8873,\r\n            \"no_absen\": null,\r\n            \"nama\": \"Zainul Hamdih\",\r\n            \"kelas\": \"1-C\",\r\n            \"id\": 1126,\r\n            \"kelas_id\": 8149,\r\n            \"bulan_ujian\": \"12-1\",\r\n            \"p1s\": null,\r\n            \"p1i\": 2,\r\n            \"p1a\": null,\r\n            \"p1t\": null,\r\n            \"p2s\": null,\r\n            \"p2i\": null,\r\n            \"p2a\": null,\r\n            \"p2t\": null,\r\n            \"p3s\": null,\r\n            \"p3i\": null,\r\n            \"p3a\": null,\r\n            \"p3t\": null,\r\n            \"p4s\": null,\r\n            \"p4i\": null,\r\n            \"p4a\": null,\r\n            \"p4t\": null,\r\n            \"p5s\": null,\r\n            \"p5i\": null,\r\n            \"p5a\": null,\r\n            \"p5t\": null\r\n        },\r\n        {\r\n            \"santri_id\": 8880,\r\n            \"no_absen\": null,\r\n            \"nama\": \"Zainur Rohman\",\r\n            \"kelas\": \"1-C\",\r\n            \"id\": 1127,\r\n            \"kelas_id\": 8157,\r\n            \"bulan_ujian\": \"12-1\",\r\n            \"p1s\": null,\r\n            \"p1i\": null,\r\n            \"p1a\": 3,\r\n            \"p1t\": null,\r\n            \"p2s\": null,\r\n            \"p2i\": null,\r\n            \"p2a\": null,\r\n            \"p2t\": null,\r\n            \"p3s\": null,\r\n            \"p3i\": null,\r\n            \"p3a\": null,\r\n            \"p3t\": null,\r\n            \"p4s\": null,\r\n            \"p4i\": null,\r\n            \"p4a\": null,\r\n            \"p4t\": null,\r\n            \"p5s\": null,\r\n            \"p5i\": null,\r\n            \"p5a\": null,\r\n            \"p5t\": null\r\n        },\r\n        {\r\n            \"santri_id\": 8896,\r\n            \"no_absen\": null,\r\n            \"nama\": \"Zidni Ilman\",\r\n            \"kelas\": \"1-C\",\r\n            \"id\": 1128,\r\n            \"kelas_id\": 8180,\r\n            \"bulan_ujian\": \"12-1\",\r\n            \"p1s\": null,\r\n            \"p1i\": null,\r\n            \"p1a\": null,\r\n            \"p1t\": 4,\r\n            \"p2s\": null,\r\n            \"p2i\": null,\r\n            \"p2a\": null,\r\n            \"p2t\": null,\r\n            \"p3s\": null,\r\n            \"p3i\": null,\r\n            \"p3a\": null,\r\n            \"p3t\": null,\r\n            \"p4s\": null,\r\n            \"p4i\": null,\r\n            \"p4a\": null,\r\n            \"p4t\": null,\r\n            \"p5s\": null,\r\n            \"p5i\": null,\r\n            \"p5a\": null,\r\n            \"p5t\": null\r\n        }\r\n    ]\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/absensi/sekolah",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"absensi",
+										"sekolah"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "store",
+							"id": "81abf517-20b4-402f-ae80-8639bc6676d6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"absensi\": [\r\n        {\r\n            \"santri_id\": 8796,\r\n            \"no_absen\": 1,\r\n            \"kelas_id\": 8110,\r\n            \"nama\": \"Wahyu Aidil\",\r\n            \"kelas\": \"1-A\",\r\n            \"bulan_ujian\": \"01-1\",\r\n            \"p1s\": \"0\",\r\n            \"p1i\": 1,\r\n            \"p1a\": 2,\r\n            \"p1t\": null,\r\n            \"p2s\": null,\r\n            \"p2i\": null,\r\n            \"p2a\": null,\r\n            \"p2t\": null,\r\n            \"p3s\": null,\r\n            \"p3i\": null,\r\n            \"p3a\": null,\r\n            \"p3t\": null,\r\n            \"p4s\": null,\r\n            \"p4i\": null,\r\n            \"p4a\": null,\r\n            \"p4t\": null,\r\n            \"p5s\": null,\r\n            \"p5i\": null,\r\n            \"p5a\": null,\r\n            \"p5t\": null\r\n        },\r\n        {\r\n            \"santri_id\": 8598,\r\n            \"no_absen\": 2,\r\n            \"kelas_id\": 8111,\r\n            \"nama\": \"Sohib\",\r\n            \"kelas\": \"1-A\",\r\n            \"bulan_ujian\": \"01-1\",\r\n            \"p1s\": 0,\r\n            \"p1i\": \"1\",\r\n            \"p1a\": null,\r\n            \"p1t\": null,\r\n            \"p2s\": null,\r\n            \"p2i\": null,\r\n            \"p2a\": null,\r\n            \"p2t\": null,\r\n            \"p3s\": null,\r\n            \"p3i\": null,\r\n            \"p3a\": null,\r\n            \"p3t\": null,\r\n            \"p4s\": null,\r\n            \"p4i\": null,\r\n            \"p4a\": null,\r\n            \"p4t\": null,\r\n            \"p5s\": null,\r\n            \"p5i\": null,\r\n            \"p5a\": null,\r\n            \"p5t\": null\r\n        },\r\n        {\r\n            \"santri_id\": 8555,\r\n            \"no_absen\": 3,\r\n            \"kelas_id\": 8113,\r\n            \"nama\": \"Shobri Mukhlis\",\r\n            \"kelas\": \"1-A\",\r\n            \"bulan_ujian\": \"01-1\",\r\n            \"p1s\": null,\r\n            \"p1i\": null,\r\n            \"p1a\": \"1\",\r\n            \"p1t\": null,\r\n            \"p2s\": null,\r\n            \"p2i\": null,\r\n            \"p2a\": null,\r\n            \"p2t\": null,\r\n            \"p3s\": null,\r\n            \"p3i\": null,\r\n            \"p3a\": null,\r\n            \"p3t\": null,\r\n            \"p4s\": null,\r\n            \"p4i\": null,\r\n            \"p4a\": null,\r\n            \"p4t\": null,\r\n            \"p5s\": null,\r\n            \"p5i\": null,\r\n            \"p5a\": null,\r\n            \"p5t\": null\r\n        }\r\n    ]\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/absensi/sekolah",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"absensi",
+										"sekolah"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "destroy",
+							"id": "7fb2e6ac-193b-4243-9334-4d5bec3c2d31",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/absensi/sekolah?bulan_ujian=12-1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"absensi",
+										"sekolah"
+									],
+									"query": [
+										{
+											"key": "bulan_ujian",
+											"value": "12-1"
+										},
+										{
+											"key": "kelas_id[]",
+											"value": "8129",
+											"disabled": true
+										},
+										{
+											"key": "kelas_id[]",
+											"value": "5",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/rekap-ujian",
+							"id": "bba6adfb-4fe7-4535-9a1b-614acc42cbb7",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{url}}/absensi/sekolah/rekap-ujian?th_ajaran_h=1444-1445&tingkat_id=id",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"absensi",
+										"sekolah",
+										"rekap-ujian"
+									],
+									"query": [
+										{
+											"key": "th_ajaran_h",
+											"value": "1444-1445"
+										},
+										{
+											"key": "tingkat_id",
+											"value": "id"
+										},
+										{
+											"key": "kelas",
+											"value": "1-c",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/laporan (dep)",
+							"id": "c26c2a98-33c1-4ca9-bae5-29a332edcb6b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/absensi/sekolah/laporan?th_ajaran_h=1444-1445&bulan_ujian=12-1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"absensi",
+										"sekolah",
+										"laporan"
+									],
+									"query": [
+										{
+											"key": "th_ajaran_h",
+											"value": "1444-1445"
+										},
+										{
+											"key": "bulan_ujian",
+											"value": "12-1"
+										},
+										{
+											"key": "tingkat_id",
+											"value": "ibt",
+											"description": "optional",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/not-null",
+							"id": "4a94c2bd-2ca7-4213-9f2e-bc886915a266",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/absensi/sekolah/not-null?th_ajaran_h=1444-1445&bulan_ujian=12-1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"absensi",
+										"sekolah",
+										"not-null"
+									],
+									"query": [
+										{
+											"key": "th_ajaran_h",
+											"value": "1444-1445",
+											"description": "required"
+										},
+										{
+											"key": "bulan_ujian",
+											"value": "12-1",
+											"description": "required"
+										},
+										{
+											"key": "tingkat_id",
+											"value": "ibt",
+											"description": "optional",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/lists/bulan-ujian",
+							"id": "98b5bc6f-39b8-4799-8cbe-efce163a04b0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/absensi/sekolah/lists/bulan-ujian?th_ajaran_h=1444-1445&tingkat_id=aly",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"absensi",
+										"sekolah",
+										"lists",
+										"bulan-ujian"
+									],
+									"query": [
+										{
+											"key": "th_ajaran_h",
+											"value": "1444-1445",
+											"description": "required"
+										},
+										{
+											"key": "tingkat_id",
+											"value": "aly",
+											"description": "optional"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "6719ffc6-1bc1-46e7-b541-345412b7937e"
+				},
+				{
+					"name": "settings",
+					"item": [
+						{
+							"name": "index",
+							"id": "a5277a32-c0c8-4187-9bc6-67dc28cdca0c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/absensi/settings?tingkat_id=Ts",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"absensi",
+										"settings"
+									],
+									"query": [
+										{
+											"key": "tingkat_id",
+											"value": "Ts"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "store",
+							"id": "05da8fe7-24c0-43f1-8490-80cb18ace93e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"bulan\":\"10\",\r\n    \"ujian\":\"3\",\r\n    \"tingkat_id\":\"Id\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/absensi/settings",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"absensi",
+										"settings"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"id": "7a1a17b5-dc04-484d-94c1-e3629133f44a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"bulan\":\"10\",\r\n    \"ujian\":\"3\",\r\n    \"tingkat_id\":\"Ts\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/absensi/settings/5",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"absensi",
+										"settings",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"id": "ead254cf-9b90-49f6-a6b8-abfe7a7ed466",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/absensi/settings/12",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"absensi",
+										"settings",
+										"12"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "ca1e59cb-9e1d-414a-bd0a-694aa9c99d48",
+					"description": "untuk keperluan absensi"
+				}
+			],
+			"id": "af35b45e-8c44-4913-8f20-e09f0155737d"
+		},
+		{
+			"name": "ortu",
+			"item": [
+				{
+					"name": "index",
+					"id": "935f28ec-5d92-422d-af3d-4da845e616be",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/ortu",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"ortu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"id": "2001673e-50ab-4fa9-bebf-438c96e53f5b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/ortu/4336",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"ortu",
+								"4336"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "id/santri",
+					"id": "8c0976ac-75bc-49f8-b779-7410a9be956d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/ortu/4391/santri",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"ortu",
+								"4391",
+								"santri"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"id": "1a014a77-b3ab-4c25-9eb0-5762ee82b4b3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ayah\":\"huz\",\r\n    \"ibu\":\"iddate\",\r\n    \"a_nik\":\"3172032005840011\",\r\n    \"i_nik\":\"3172034212900009\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/ortu",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"ortu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"id": "8797576a-63a3-419d-8c45-834fec35d31a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ayah\":\"huza\",\r\n    \"ibu\":\"iddate\",\r\n    \"a_nik\":\"3172032005840011\",\r\n    \"i_nik\":\"3172034212900009\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/ortu/5369",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"ortu",
+								"5369"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"id": "9872ce54-9e35-4c51-a8a9-0186c76e70e2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ayah\":\"update\",\r\n    \"ibu\":\"iddate\",\r\n    \"a_nik\":\"0987654321123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/ortu/5369",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"ortu",
+								"5369"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "4424dbe4-beea-4f98-8c27-68eb1c5873c0"
+		},
+		{
+			"name": "santri",
+			"item": [
+				{
+					"name": "index",
+					"id": "efaa5c88-7603-475e-9cbb-262391c6d3b8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "{{url}}/santri?search=banyuates kab. sampang&page=1&limit=5",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"santri"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "banyuates kab. sampang"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "index Copy",
+					"id": "10cb3cb5-909b-4926-b0f2-027740fc4ed5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "{{url}}/santri?search=banyuates kab. sampang&page=1&limit=5",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"santri"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "Sya",
+									"disabled": true
+								},
+								{
+									"key": "search",
+									"value": "banyuates kab. sampang",
+									"type": "text"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"id": "b26bc82b-9658-4feb-8357-b6ffb2b2fad2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/santri/8000",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"santri",
+								"8000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"id": "0f7ccefc-2410-42c5-8564-ec789b82bff3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"id\":8907,\r\n    \"nama\":\"\",\r\n    \"sex\":\"L\",\r\n    \"ortu_id\":\"5368\",\r\n    \"wali_id\":\"5455\",\r\n    \"wali_status\":\"x a\",\r\n    \"jl\":\"\",\r\n    \"nik\":\"1534123412341188\",\r\n    \"tgl_daftar_m\":\"2020-01-01\",\r\n    \"tgl_daftar_h\":\"34432222\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/santri",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"santri"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"id": "0bb61d94-a243-466c-9d15-71aff29cbc40",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":8001,\r\n    \"nama\":\"Muhammad Lutfi\",\r\n    \"sex\":\"L\",\r\n    \"ortu_id\":\"5368\",\r\n    \"wali_id\":\"5455\",\r\n    \"wali_status\":\"xi a\",\r\n    \"jl\":\"\",\r\n    \"nik\":\"1234123442391238\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/santri/8001",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"santri",
+								"8001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"id": "e92028e3-0074-4c87-830b-f2674283aa05",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ayah\":\"update\",\r\n    \"ibu\":\"iddate\",\r\n    \"a_nik\":\"0987654321123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/santri/8905",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"santri",
+								"8905"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/search",
+					"id": "e7cf7398-ef22-40eb-ab95-7668463e5ed2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded; charset=UTF-8",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"length\":3,\r\n    // \"search[value]\":\"usman\",\r\n    \"draw\":3,\r\n    \"start\":0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/santri/search",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"santri",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ids",
+					"id": "7049beed-6cb3-4193-9eb1-039d5e4b7b2d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "{{url}}/santri/ids?active_only=true&q=80",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"santri",
+								"ids"
+							],
+							"query": [
+								{
+									"key": "active_only",
+									"value": "true"
+								},
+								{
+									"key": "active_only",
+									"value": "false",
+									"disabled": true
+								},
+								{
+									"key": "active_only",
+									"value": "null",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "q",
+									"value": "80"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/:id/wali",
+					"id": "5d01341a-dee3-4d45-9e08-9001443d7575",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/santri/8000/wali",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"santri",
+								"8000",
+								"wali"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/:id/ortu",
+					"id": "34f8457a-db31-435c-8e34-6c63bd87f013",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/santri/8000/ortu",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"santri",
+								"8000",
+								"ortu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/:id/domisili",
+					"id": "1100b24c-ebb8-4ced-a0fd-f313ecab6720",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/santri/8000/domisili",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"santri",
+								"8000",
+								"domisili"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/:id/status",
+					"id": "a4adaa75-698e-4312-834e-8ba20fd56362",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/santri/8000/status",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"santri",
+								"8000",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/:id/kelas",
+					"id": "bbcc456c-4132-45ec-b8d3-bf3867f457e8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/santri/8000/kelas",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"santri",
+								"8000",
+								"kelas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/:id/iuran",
+					"id": "c7ec817d-047f-4207-a04a-890459f7cc06",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/santri/8000/iuran",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"santri",
+								"8000",
+								"iuran"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/:id/iuran-total",
+					"id": "6130ae3b-c498-43d3-8a22-f14c6b45668e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/santri/8000/iuran-total",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"santri",
+								"8000",
+								"iuran-total"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/:id/iuran/th",
+					"id": "af5b35d7-82b6-4bcb-91e1-dce099b369de",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/santri/8000/iuran/1442-1443",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"santri",
+								"8000",
+								"iuran",
+								"1442-1443"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "b1d20c78-110d-49fe-8131-2439f089beb7"
+		},
+		{
+			"name": "kelas",
+			"item": [
+				{
+					"name": "index",
+					"id": "25e0bea3-a9d7-4f7e-a15c-cd33b4f9db63",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/kelas?th_ajaran_h=1441-1442&tingkat_id=Ibt",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"kelas"
+							],
+							"query": [
+								{
+									"key": "th_ajaran_h",
+									"value": "1441-1442",
+									"description": "required"
+								},
+								{
+									"key": "tingkat_id",
+									"value": "Ibt",
+									"description": "optional"
+								},
+								{
+									"key": "kelas",
+									"value": "1-A",
+									"description": "optional",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"id": "ce8c6b2c-8571-41a8-8804-18c1a963a861",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/kelas/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"kelas",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"id": "1a2cad93-2091-4e7e-817f-09d873f8ba19",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"santri_id\":\"8000\",\r\n    \"tingkat_id\":\"Ibt\",\r\n    \"th_ajaran_h\":\"1442-1443\",\r\n    \"kelas\":\"5-a\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/kelas",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"kelas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"id": "0d3c956b-3bef-43b4-bb2c-7e52013d9861",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1769,\r\n    \"santri_id\": 8000,\r\n    \"th_ajaran_h\": \"1441-1442\",\r\n    \"tingkat_id\": \"Ts\",\r\n    \"kelas\": \"1-A\",\r\n    \"no_absen\": null,\r\n    \"keterangan\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/kelas/1769",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"kelas",
+								"1769"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"id": "d829a3ab-4247-4204-b561-671671e46d35",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/kelas/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"kelas",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/lists",
+					"id": "e0101200-6cb2-43f2-a0fd-12d900e3c1c9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/kelas/lists",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"kelas",
+								"lists"
+							],
+							"query": [
+								{
+									"key": "th_ajaran_h",
+									"value": "1440-1441",
+									"disabled": true
+								},
+								{
+									"key": "tingkat_id",
+									"value": "ibt",
+									"disabled": true
+								},
+								{
+									"key": "kelas",
+									"value": "1-A",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/no-absen",
+					"id": "496b77a5-ffee-44da-935c-1606a089980e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n    \"id\": 570,\r\n    \"no_absen\": 79\r\n    },\r\n    {\r\n    \"id\": 518,\r\n    \"no_absen\": 89\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/kelas/no-absen",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"kelas",
+								"no-absen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/id/riwayat",
+					"id": "8d03285c-8db6-4e6c-980a-593f14663afc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/kelas/3/riwayat",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"kelas",
+								"3",
+								"riwayat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/id/set-active",
+					"id": "4c99075b-8203-47b1-b5e7-a9db0a951d25",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"aktif\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/kelas/8184/set-active",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"kelas",
+								"8184",
+								"set-active"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "d26c5cb1-b5c7-45e8-93a5-3750f6562c10"
+		},
+		{
+			"name": "aparatur",
+			"item": [
+				{
+					"name": "index",
+					"id": "d1280066-3788-424c-a4db-9fa6fb90aee0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/aparaturs",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"aparaturs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"id": "141d23bd-1757-4ddb-9127-2087a8b5223a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/aparatur/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"aparatur",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"id": "8ea3ff4f-6211-4f74-85cd-4b346b0f1830",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"160\",\r\n    \"nama\":\"oets\",\r\n    \"nik\":\"8234567890123451\",\r\n    \"sex\":\"L\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/aparatur",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"aparatur"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"id": "6b4b31d5-fa04-411d-8728-ae5f14f774b3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"111\",\r\n    \"nama\": \"UST MASHURIx\",\r\n    \"tmp_lahir\": \"Tasikmalaya\",\r\n    \"sex\":\"L\",\r\n    \"nik\":1234567890112213\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/aparatur/160",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"aparatur",
+								"160"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"id": "eb5aaa01-1b8f-43fc-8257-430b31839f90",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/aparatur/111",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"aparatur",
+								"111"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "id/madrasah",
+					"id": "95699438-f371-496c-9b5d-750fb0dc26da",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/aparatur/2/madrasah",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"aparatur",
+								"2",
+								"madrasah"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "e82045ad-8b3b-4ef4-a6fc-30bb4c41871e"
+		},
+		{
+			"name": "aparatur-madrasah",
+			"item": [
+				{
+					"name": "?th",
+					"id": "67902464-9b4c-44a7-a5c7-3dbc70ab5854",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/aparatur-madrasah?th_ajaran_h=1442-1443",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"aparatur-madrasah"
+							],
+							"query": [
+								{
+									"key": "th_ajaran_h",
+									"value": "1442-1443"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "?th/?tingkat_id",
+					"id": "09c886e0-67d9-4c64-95be-ea0b6f166a59",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/aparatur-madrasah?th_ajaran_h=1442-1443&tingkat_id=aly",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"aparatur-madrasah"
+							],
+							"query": [
+								{
+									"key": "th_ajaran_h",
+									"value": "1442-1443"
+								},
+								{
+									"key": "tingkat_id",
+									"value": "aly"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"id": "919f20e3-9adf-4bee-9d28-d92056a8b51c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"aparatur_id\":\"6\",\r\n    \"tingkat_id\":\"Ibt\",\r\n    \"th_ajaran_h\":\"1444-1445\",\r\n    \"jabatan\":\"wali kelas\"\r\n    , \"kelas\":\"aa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/aparatur-madrasah",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"aparatur-madrasah"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"id": "8ce3e4b5-ba07-4145-bd83-328c5803974c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"aparatur_id\": 6,\r\n    \"th_ajaran_h\": \"1441-1442\",\r\n    \"tingkat_id\": \"Ibt\",\r\n    \"jabatan\": \"Wali kelas\",\r\n    \"kelas\":\"asdf\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/aparatur-madrasah/128",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"aparatur-madrasah",
+								"128"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"id": "9940b581-c10a-4276-a330-aec70bf1c9f4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/aparatur-madrasah/128",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"aparatur-madrasah",
+								"128"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "f7115a23-0edf-4d9b-8bd5-ce7bd9e0c0b5"
+		},
+		{
+			"name": "images",
+			"item": [
+				{
+					"name": "personalia",
+					"id": "b72f09d3-943b-422e-870c-648ca3aac44d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/D:/Pictures/Nikahku 07-06-2015/indoor/DSC_1478.JPG"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/images/personalia/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"images",
+								"personalia",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "personalia",
+					"id": "b8d3dad7-3949-422e-b066-f95736566cbe",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/D:/Pictures/Nikahku 07-06-2015/indoor/DSC_1478.JPG"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/images/personalia/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"images",
+								"personalia",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "santri",
+					"id": "10653aa4-2391-4c5c-bc76-0d6d215a306b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/D:/Pictures/Nikahku 07-06-2015/indoor/DSC_1424.JPG"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/images/santri/8001",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"images",
+								"santri",
+								"8001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "santri",
+					"id": "0a8bc16f-bf97-4f3d-a437-37afd919d23f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/D:/Downloads/icons8-defend-family-100.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/images/santri/8905",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"images",
+								"santri",
+								"8905"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users",
+					"id": "8e90e76e-cbab-48dc-b6a8-5a70812bd31a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/D:/Pictures/Nikahku 07-06-2015/indoor/DSC_1552.JPG"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/images/users/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"images",
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users",
+					"id": "8e0af4a9-3a4d-4aee-88f6-a42f919687e4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/D:/Pictures/Nikahku 07-06-2015/indoor/DSC_1552.JPG"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/images/users/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"images",
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "84de5ae3-4911-4139-bb63-4b00a4109867"
+		},
+		{
+			"name": "lists",
+			"item": [
+				{
+					"name": "index",
+					"id": "64a984ee-1949-4fb6-9a6b-8868ea8ea6f9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/lists",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"lists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"id": "4ce22a76-7dcc-495a-ba27-c9ec826d512a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"key\":\"tingkat-pendidikan\",\r\n    \"val0\":\"aadda\",\r\n    \"val1\":\"omi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/lists",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"lists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"id": "079e32bb-ec74-496b-bbf2-5dd8ab58eb1f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"key\":\"kelas\",\r\n    \"val0\":\"Membuat surat pernyataan dengan sepengetahuan Walinya/\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/lists/706",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"lists",
+								"706"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"id": "c8c43d28-9e47-407f-b77d-7e603aba689d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ayah\":\"update\",\r\n    \"ibu\":\"iddate\",\r\n    \"a_nik\":\"0987654321123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/lists/805",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"lists",
+								"805"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lists/tahun-ajaran",
+					"id": "e0b09b64-a363-4834-8c7e-c2e66b8a2611",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/lists/tahun-ajaran",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"lists",
+								"tahun-ajaran"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lists/bulan-hijri",
+					"id": "12f05e57-f7c0-452e-b513-9028ec801559",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/lists/bulan-hijri",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"lists",
+								"bulan-hijri"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lists/iuran",
+					"id": "8b98e6e6-e2b0-4214-88ae-94d3abe87634",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/lists/iuran",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"lists",
+								"iuran"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lists/jabatan",
+					"id": "fc323e12-58a1-4ac6-96ec-dfb60f9c7c49",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/lists/jabatan",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"lists",
+								"jabatan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lists/tingkat-pendidikan",
+					"id": "9d27d651-8329-450d-b549-49153d96aab6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/lists/tingkat-pendidikan",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"lists",
+								"tingkat-pendidikan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lists/hubungan-wali",
+					"id": "9d15a3c3-ac1b-4377-8cc2-d9dfc6570e8b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/lists/hubungan-wali",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"lists",
+								"hubungan-wali"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lists/pendidikan-akhir-formal",
+					"id": "a987f57a-bcde-4f25-8941-59066d002750",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/lists/pendidikan-akhir-formal",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"lists",
+								"pendidikan-akhir-formal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lists/tatib-santri",
+					"id": "422cc172-c929-40fd-b79c-f194ed6bc75a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/lists/tatib-santri",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"lists",
+								"tatib-santri"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "c3770b26-ce5a-4459-a5db-5f106a19e66a"
+		},
+		{
+			"name": "murid (deprecated)",
+			"item": [
+				{
+					"name": "list-kelas (deprecated)",
+					"item": [
+						{
+							"name": "th-ajarah-h",
+							"id": "0a160296-043e-4ee7-9c4b-59af0dce9b0c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/murid/lists-kelas",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"murid",
+										"lists-kelas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "tingkat",
+							"id": "39d9450b-3ec5-4d49-8214-059152550107",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/murid/lists-kelas/1441-1442",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"murid",
+										"lists-kelas",
+										"1441-1442"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "kelas",
+							"id": "c3b25f64-966e-4d72-afd3-6fe2a873704a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/murid/lists-kelas/1443-1444/psc",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"murid",
+										"lists-kelas",
+										"1443-1444",
+										"psc"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "8bc290f2-1db5-43c0-b185-fd3077f5bde1"
+				},
+				{
+					"name": "/",
+					"id": "a1638e25-67e5-44f4-aaaa-5fb16337cfd3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/murid",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"murid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "th-ajaran",
+					"id": "54f3f8a9-34f7-4b56-b02a-37f6f0ad1cb0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/murid/1441-1442",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"murid",
+								"1441-1442"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "th-ajaran/tingkat",
+					"id": "dbf40e2f-df87-483e-883d-eb32f00d750f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/murid/1441-1442/Ibt",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"murid",
+								"1441-1442",
+								"Ibt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "th-ajaran/tingkat/kelas",
+					"id": "1f90734d-73e5-4274-be07-b7c8eb3f5795",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/murid/1441-1442/Ibt/1-A",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"murid",
+								"1441-1442",
+								"Ibt",
+								"1-A"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "cb03349a-2a75-4711-a0c5-0b5ea31f8ccc"
+		},
+		{
+			"name": "alamat",
+			"item": [
+				{
+					"name": "index",
+					"id": "b0727467-8b21-48e7-a1b8-ceca5ca7c24f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/alamat?provinsi=jawa timur&kabupaten=Kab. bangkalan&kecamatan=burneh",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"alamat"
+							],
+							"query": [
+								{
+									"key": "provinsi",
+									"value": "jawa timur"
+								},
+								{
+									"key": "kabupaten",
+									"value": "Kab. bangkalan"
+								},
+								{
+									"key": "kecamatan",
+									"value": "burneh"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "kabupaten-kota",
+					"id": "65740e80-074b-4c52-98e9-534842e91d8c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/alamat/kabupaten-kota?q=sam",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"alamat",
+								"kabupaten-kota"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "sam"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "2fccc5e3-9975-4ef9-a294-aa0922112b73"
+		},
+		{
+			"name": "domisili",
+			"item": [
+				{
+					"name": "index",
+					"id": "3e688e9a-e070-4a7f-9d19-d66b8bc3549d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/domisili",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"domisili"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"id": "0133a0f8-9131-46e3-abc0-c23fe85997b3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/domisili/5391",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"domisili",
+								"5391"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"id": "de3762df-e6fe-4d1d-a412-ef612908f49c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"Adaa a\",\r\n    \"santri_id\":\"80ert00\",\r\n   \"domisili\":\"a-232\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/domisili",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"domisili"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"id": "6f978877-45ed-4db7-8184-550817005b62",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n       \"id\":\"Adaa a\",\r\n    \"santri_id\":\"8000\",\r\n    \"domisili\":\"a-10\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/domisili/9125",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"domisili",
+								"9125"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"id": "fe72ad5b-ac8b-4e94-8b43-a78900344b0d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ayah\":\"update\",\r\n    \"ibu\":\"iddate\",\r\n    \"a_nik\":\"0987654321123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/domisili/5308",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"domisili",
+								"5308"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "20477e03-fafc-402c-9187-28952fafd3bb"
+		},
+		{
+			"name": "status",
+			"item": [
+				{
+					"name": "index",
+					"id": "a2368303-efe8-41b7-a44f-297ed5cd467e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/status",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"id": "797abab2-fff7-4925-8dce-e142a42d2433",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/status/5391",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"status",
+								"5391"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"id": "e8cf3281-9763-46d3-8de6-d247747bb196",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":2342,\r\n    \"santri_id\":\"8000\",\r\n    \"status\":\"tew\",\r\n    \"keterangan\":\"adc\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/status",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"id": "39317bcd-6f73-4e66-8b5b-4288d91bb240",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"santri_id\":\"8000\",\r\n    \"status\":\"tew\",\r\n    \"keterangan\":\"adc\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/status/5822",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"status",
+								"5822"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"id": "6b1e2a06-1272-4f0b-9478-c4e3083aeda6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/status/5821",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"status",
+								"5821"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "2e57ccd8-0341-44b4-859c-429d2ec0cb47"
+		},
+		{
+			"name": "mapel",
+			"item": [
+				{
+					"name": "index",
+					"id": "36c4fd53-9ceb-4b1c-a326-76155e2619fd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/mapel",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"mapel"
+							],
+							"query": [
+								{
+									"key": "tingkat_id",
+									"value": "ibt",
+									"disabled": true
+								},
+								{
+									"key": "show",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"id": "e662277c-283a-4e0f-95df-6879ae5c7302",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/mapel/999",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"mapel",
+								"999"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"id": "579bce70-ac87-41ae-ab56-8c33461ada2e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"id\":\"992\",\r\n   \"tingkat_id\":\"Ibt\",\r\n    \"mapel\":\"tes mapel4d31\",\r\n    \"status_fan\":\"Fan Pokok\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/mapel",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"mapel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"id": "e556db95-d154-4f91-8ef9-da16199c2fec",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":999,\r\n    \"tingkat_id\":\"ibt\",\r\n    \"mapel\":\"tes mapel\",\r\n    \"show\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/mapel/999",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"mapel",
+								"999"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"id": "6b70df6b-a1f6-4fab-8d87-6616a0672d08",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/mapel/994",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"mapel",
+								"994"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "3c968b9e-eb7c-47a8-85e1-fe6e39302d71"
+		},
+		{
+			"name": "nilai-mapel",
+			"item": [
+				{
+					"name": "index",
+					"id": "35b8044c-2bea-4805-978f-e17b35dc01ec",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/nilai-mapel?kelas_id=2091&category=rapor",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"nilai-mapel"
+							],
+							"query": [
+								{
+									"key": "kelas_id",
+									"value": "2091"
+								},
+								{
+									"key": "category",
+									"value": "rapor"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"id": "75a49b00-5d2a-490f-8f33-8c76db38d3c6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\":[\r\n        {\r\n            \"kelas_id\": 2091,\r\n            \"mapel_id\": \"id-qur\",\r\n            \"ujian_ke\": 4,\r\n            \"n_ujian\": 81\r\n        },\r\n        {\r\n            \"kelas_id\": 1367,\r\n            \"mapel_id\": \"id-qur\",\r\n            \"ujian_ke\": 4,\r\n            \"n_ujian\": 55\r\n        },\r\n        {\r\n            \"kelas_id\": 2092,\r\n            \"mapel_id\": \"id-qur\",\r\n            \"ujian_ke\": 4,\r\n            \"n_ujian\": null\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/nilai-mapel",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"nilai-mapel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/rerata",
+					"id": "7cc7ed5c-a81c-40da-aa26-5c68d208b189",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/nilai-mapel/rerata?th_ajaran_h=1441-1442&tingkat_id=ts&kelas=5-a&category=harian",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"nilai-mapel",
+								"rerata"
+							],
+							"query": [
+								{
+									"key": "th_ajaran_h",
+									"value": "1441-1442"
+								},
+								{
+									"key": "tingkat_id",
+									"value": "ts"
+								},
+								{
+									"key": "kelas",
+									"value": "5-a"
+								},
+								{
+									"key": "category",
+									"value": "harian"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/export",
+					"id": "c85c4160-5256-4900-9d8e-e65c3f494f05",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/nilai-mapel/export?th_ajaran_h=1441-1442&tingkat_id=id&kelas=3-a&category=ujian&ujian_ke=4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"nilai-mapel",
+								"export"
+							],
+							"query": [
+								{
+									"key": "th_ajaran_h",
+									"value": "1441-1442"
+								},
+								{
+									"key": "tingkat_id",
+									"value": "id"
+								},
+								{
+									"key": "kelas",
+									"value": "3-a"
+								},
+								{
+									"key": "category",
+									"value": "ujian"
+								},
+								{
+									"key": "ujian_ke",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "73a8979a-9b04-44bd-b687-fb161e3acfec"
+		},
+		{
+			"name": "nilai-ahwal",
+			"item": [
+				{
+					"name": "index",
+					"id": "add3b873-dec5-4932-b6f7-0fe948c020d6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/nilai-ahwal?th_ajaran_h=1444-1445&tingkat_id=aly&kelas=1-a&ujian_ke=2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"nilai-ahwal"
+							],
+							"query": [
+								{
+									"key": "th_ajaran_h",
+									"value": "1444-1445",
+									"description": "required"
+								},
+								{
+									"key": "tingkat_id",
+									"value": "aly",
+									"description": "required"
+								},
+								{
+									"key": "kelas",
+									"value": "1-a",
+									"description": "required"
+								},
+								{
+									"key": "ujian_ke",
+									"value": "2",
+									"description": "required"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"id": "5c3c1f46-08fe-4672-8f33-562c79205e08",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kelas_id\": 8096,\r\n    \"hal\": \"disiplin\",\r\n    \"ujian_ke\": 1,\r\n    \"skor\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/nilai-ahwal",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"nilai-ahwal"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "cc2e40c2-d5b4-44d2-be7f-2113d05b105a"
+		},
+		{
+			"name": "nilai-lock",
+			"item": [
+				{
+					"name": "index",
+					"id": "d406bd46-4300-466c-b097-1432cf428e58",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/nilai-lock",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"nilai-lock"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"id": "b3c426b8-94e8-44f1-9054-e9d92078b03f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"th_ajaran_h\":\"1441-1442\",\r\n    \"tingkat_id\":\"id\",\r\n    \"kelas\":\"3-a\",\r\n    \"ujian_ke\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/nilai-lock",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"nilai-lock"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "destroy",
+					"id": "662e36ae-5247-43ad-86fd-2237e9a9fd92",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/nilai-lock/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"nilai-lock",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "39f5ee22-1fe9-4a54-b181-fff6697c19ff"
+		},
+		{
+			"name": "indisipliner",
+			"item": [
+				{
+					"name": "index",
+					"id": "03e77164-45d8-4bc2-b2df-ea0bd1da46ea",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/indisipliner?start_date=2023-01-10&end_date=2023-05-27",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"indisipliner"
+							],
+							"query": [
+								{
+									"key": "start_date",
+									"value": "2023-01-10"
+								},
+								{
+									"key": "end_date",
+									"value": "2023-05-27"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"id": "b37efdba-3b0c-400b-8640-73354edf5f76",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/indisipliner/345",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"indisipliner",
+								"345"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"id": "cef682a6-3e08-4bd3-a596-27ab6d3e6008",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"santri_id\":\"8000\",\r\n    \"kategori\":\"tes\",\r\n    \"tgl_kasus_m\":\"2023-12-01\",\r\n    \"tgl_sidang_m\":\"2023-12-01\",\r\n    \"pasal\":\"[aa] ees; [12] asdf\",\r\n    \"eksekutor\":\"tes\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/indisipliner",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"indisipliner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"id": "e99130d4-ff47-4e96-a8b7-45212e0ed219",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"santri_id\":\"8000\",\r\n    \"kategori\":\"tes\",\r\n    \"tgl_kasus_m\":\"2023-12-01\",\r\n    \"tgl_sidang_m\":\"2023-12-01\",\r\n    \"pasal\":\"[aa] ees 1234\",\r\n    \"eksekutor\":\"tes\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/indisipliner/354",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"indisipliner",
+								"354"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"id": "b8aa6dbf-7b6d-4f8c-ab87-dca732e92d19",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/indisipliner/354",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"indisipliner",
+								"354"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "f074b219-7044-4ee1-a7af-d20e42f1680c"
+		},
+		{
+			"name": "izin-pesantren",
+			"item": [
+				{
+					"name": "index",
+					"id": "ff5bb69c-d13e-437d-b29e-58a7117d728e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/izin-pesantren?start_date=2023-05-27&end_date=2023-05-27 23:59:59",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"izin-pesantren"
+							],
+							"query": [
+								{
+									"key": "start_date",
+									"value": "2023-05-27"
+								},
+								{
+									"key": "end_date",
+									"value": "2023-05-27 23:59:59"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"id": "3288c488-b484-4cc9-81a1-cbe4e33ce9ce",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/izin-pesantren/5391",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"izin-pesantren",
+								"5391"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"id": "d135d96c-e370-42e7-9d27-af777ce3210e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":2342,\r\n    \"nama\":\"tes\",\r\n    \"santri_id\":\"8000\",\r\n    \"sifat\":\"tes izin\",\r\n    \"tgl_m\":\"2023-12-01\",\r\n    \"tgl_h\":\"12341212\",\r\n    \"durasi\":\"1\",\r\n    \"keperluan\":\"tes\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/izin-pesantren",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"izin-pesantren"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"id": "6930741f-8491-4ee9-94a7-3ce190d30edf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"id\":2342,\r\n    \"nama\":\"tes\",\r\n    \"santri_id\":\"8000\",\r\n    \"sifat\":\"tes izin\",\r\n    \"tgl_m\":\"2023-12-01\",\r\n    \"tgl_h\":\"12341212\",\r\n    \"durasi\":\"1\",\r\n    \"keperluan\":\"tes\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/izin-pesantren/5634",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"izin-pesantren",
+								"5634"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update kembali",
+					"id": "49e20014-52fb-49a7-9b48-896bef8d4d43",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kembali_m\":\"2023-12-10\",\r\n    \"kembali_h\":\"20201212\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/izin-pesantren/5641/set-kembali",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"izin-pesantren",
+								"5641",
+								"set-kembali"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"id": "d171d20e-3ac2-4bc0-9da6-66c2d9173d06",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/izin-pesantren/5641",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"izin-pesantren",
+								"5641"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "876c2370-f58b-4940-a482-2584f0568c3e"
+		},
+		{
+			"name": "izin-madrasah",
+			"item": [
+				{
+					"name": "index",
+					"id": "aec9f9e8-caeb-49e7-a0e6-313b91a36bae",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/izin-madrasah?start_date=2023-05-27&end_date=2023-05-27",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"izin-madrasah"
+							],
+							"query": [
+								{
+									"key": "start_date",
+									"value": "2023-05-27"
+								},
+								{
+									"key": "end_date",
+									"value": "2023-05-27"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"id": "c485b7ef-08fa-4d9d-81be-219752da2a83",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/izin-madrasah/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"izin-madrasah",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"id": "6509cb24-1f4a-4f83-8065-174a6372422b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kelas_id\":\"8111\",\r\n    \"tgl_m\":\"2023-12-01\",\r\n    \"tgl_h\":\"12341212\",\r\n    \"durasi\":\"1\",\r\n    \"keperluan\":\"tes\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/izin-madrasah",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"izin-madrasah"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"id": "b6440d2c-4789-430a-80f4-1c7f9f8aa553",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"kelas_id\": \"8111\",\r\n    \"tgl_m\": \"2023-12-01\",\r\n    \"tgl_h\": \"12341212\",\r\n    \"durasi\": \"2\",\r\n    \"keperluan\": \"tes\",\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/izin-madrasah/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"izin-madrasah",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"id": "6c065f28-d63a-44a5-90c3-fbc9f7bc7b67",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/izin-madrasah/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"izin-madrasah",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "kelas/id",
+					"id": "c4bcc131-c166-445f-afa3-8cd5acab0650",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/izin-madrasah/kelas/8111",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"izin-madrasah",
+								"kelas",
+								"8111"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "60195eb2-2abd-43df-bfd9-2745b8241dbf"
+		},
+		{
+			"name": "iuran",
+			"item": [
+				{
+					"name": "index",
+					"id": "f30a3316-2382-4871-a165-d4bdf19113cb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/iuran?start_date=2023-05-01&end_date=2024-05-01",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"iuran"
+							],
+							"query": [
+								{
+									"key": "th_ajaran_h",
+									"value": "1443-1444",
+									"disabled": true
+								},
+								{
+									"key": "start_date",
+									"value": "2023-05-01"
+								},
+								{
+									"key": "end_date",
+									"value": "2024-05-01"
+								},
+								{
+									"key": "santri_id",
+									"value": "8000",
+									"disabled": true
+								},
+								{
+									"key": "iuran",
+									"value": "kts",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"id": "d9a07fe4-9a34-46d6-9d9d-4a9b4a7180f8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/iuran/5391",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"iuran",
+								"5391"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"id": "48358f69-55b6-44dc-89be-6a7e6f27a21b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"santri_id\":\"7004\",\r\n    \"th_ajaran_h\":\"1234-1223\",\r\n    \"iuran\":\"tes iuran\",\r\n    \"nominal\":\"11000\",\r\n    \"qty\":\".25\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/iuran",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"iuran"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"id": "3abb4b42-3864-4700-8b44-f1c7cfd747fd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"santri_id\":\"7004\",\r\n    \"th_ajaran_h\":\"1234-1223\",\r\n    \"iuran\":\"abcde\",\r\n    \"nominal\":\"10000\",\r\n    \"qty\":\".25\",\r\n    \"via\":\"bang\",\r\n    \"keterangan\":\"bisa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/iuran/29166",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"iuran",
+								"29166"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"id": "39138761-4a65-4324-9093-62d20dadd7a7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/iuran/29173",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"iuran",
+								"29173"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/santri/:id",
+					"id": "c9b4272f-37e3-4200-ac14-e311b278a913",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/iuran/santri/8000",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"iuran",
+								"santri",
+								"8000"
+							],
+							"query": [
+								{
+									"key": "th_ajaran_h",
+									"value": "1442-1443",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/:id/set-check",
+					"id": "e54feef6-07e1-4dde-ba84-0b2f77702e60",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"check\":0}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/iuran/29174/set-check",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"iuran",
+								"29174",
+								"set-check"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/lists",
+					"id": "529f1b73-28f5-4601-adb7-9ddeeda77d17",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/iuran/lists",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"iuran",
+								"lists"
+							],
+							"query": [
+								{
+									"key": "th_ajaran_h",
+									"value": "1443-1444",
+									"disabled": true
+								},
+								{
+									"key": "key",
+									"value": "santri_id",
+									"disabled": true
+								},
+								{
+									"key": "key",
+									"value": "iuran",
+									"disabled": true
+								},
+								{
+									"key": "key",
+									"value": "via",
+									"disabled": true
+								},
+								{
+									"key": "key",
+									"value": "kasir",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "10a4cb1d-7219-4fd8-9c3e-dc042711fdb1"
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "forgot",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "04f70dd7-e169-4d1f-9772-2626bccf8054",
+								"exec": [
+									"pm.test('set token', () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const { data } = responseJson;\r",
+									"\r",
+									"    pm.expect(data).to.haveOwnProperty('token');\r",
+									"    pm.expect(data.token).to.not.equals('');\r",
+									"\r",
+									"    pm.environment.set('token', data.token);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "3b0b28b4-0b7a-4318-8cff-2bb6daf36265",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"idsantri.online@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/forgot-password",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"forgot-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "04f70dd7-e169-4d1f-9772-2626bccf8054",
+								"exec": [
+									"pm.test('set token', () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const { data } = responseJson;\r",
+									"\r",
+									"    pm.expect(data).to.haveOwnProperty('token');\r",
+									"    pm.expect(data.token).to.not.equals('');\r",
+									"\r",
+									"    pm.environment.set('token', data.token);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "ea8cf0b2-b3c3-46c8-83f6-f192641b9ff9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"oets.man@gmail.com\",\r\n    \"password\":\"12345611\",\r\n    \"token\":\"4c31ef722f36b3349a9f19ccf058fcd5f5d2ef14b978b4dd2248df5612aa14e6\",\r\n    \"password_confirmation\":\"12345611\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/reset-password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"reset-password"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "6985c1f08d38c5aeaea482cdfccaa39d4c843dc1c15244d3f6eced584c0afd34",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "idsantri.online@gmail.com",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password_confirmation",
+									"value": "123456",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login all",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "04f70dd7-e169-4d1f-9772-2626bccf8054",
+								"exec": [
+									"pm.test('set token', () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const { token } = responseJson;\r",
+									"\r",
+									"    pm.expect(token).to.not.equals('');\r",
+									"\r",
+									"    pm.environment.set('token', token);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "844d679f-74d7-4841-b1a0-1690887e7daa",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\":\"all\",\r\n    \"password\":\"112233\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login sekretariat",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "04f70dd7-e169-4d1f-9772-2626bccf8054",
+								"exec": [
+									"pm.test('set token', () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const { token } = responseJson;\r",
+									"\r",
+									"    pm.expect(token).to.not.equals('');\r",
+									"\r",
+									"    pm.environment.set('token', token);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "c2ba4cb6-eef0-432a-8344-00035e657d9c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\":\"sekretariat\",\r\n    \"password\":\"112233\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login madrasah",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "04f70dd7-e169-4d1f-9772-2626bccf8054",
+								"exec": [
+									"pm.test('set token', () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const { token } = responseJson;\r",
+									"\r",
+									"    pm.expect(token).to.not.equals('');\r",
+									"\r",
+									"    pm.environment.set('token', token);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "66854af7-7a9b-48d9-b96b-dfaa0099ee95",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\":\"madrasah\",\r\n    \"password\":\"112233\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "04f70dd7-e169-4d1f-9772-2626bccf8054",
+								"exec": [
+									"pm.test('set token', () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const { token } = responseJson;\r",
+									"\r",
+									"    pm.expect(token).to.not.equals('');\r",
+									"\r",
+									"    pm.environment.set('token', token);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "ff0a4466-3c60-42ed-82d5-166938f477d2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\":\"idsantri.online@gmail.com\",\r\n    \"password\":\"112233\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "04f70dd7-e169-4d1f-9772-2626bccf8054",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "0e624113-06f8-4e93-a2ba-8ae12d4cda5a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"ID Santri\",\r\n    \"username\":\"idsantri\",\r\n    \"email\":\"idsantri.online@gmail.com\",\r\n    \"password\":\"112233\",\r\n    \"password_confirmation\":\"112233\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "04f70dd7-e169-4d1f-9772-2626bccf8054",
+								"exec": [
+									"pm.test('remove token', () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    const { error } = responseJson;\r",
+									"    pm.expect(error).to.equals(false);\r",
+									"    pm.environment.set('token', '');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "62a598b3-b12c-4bbc-8a68-ced4504d52f4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/logout",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "resend email",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "04f70dd7-e169-4d1f-9772-2626bccf8054",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "b26f0a9f-9aac-4388-a124-ef6179c92d93",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/email-verification?email=idsantri.online@gmail.com",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"email-verification"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "idsantri.online@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verify",
+					"id": "91cb42db-4d95-4f4a-992a-8d6fdeeb541e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/email-verify/26/653b6fa15a41df18e0641d5f5f69cd060eebd640?expires=1689058807&signature=05fdc7623ae29f957e97dc28723ad0eb45ef91d9535d8806dd20783703365f5f",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"email-verify",
+								"26",
+								"653b6fa15a41df18e0641d5f5f69cd060eebd640"
+							],
+							"query": [
+								{
+									"key": "expires",
+									"value": "1689058807"
+								},
+								{
+									"key": "signature",
+									"value": "05fdc7623ae29f957e97dc28723ad0eb45ef91d9535d8806dd20783703365f5f"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sanctum cookie",
+					"id": "bf02626e-8457-4876-9d59-759365cd7369",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/sanctum/csrf-cookie",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"sanctum",
+								"csrf-cookie"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/roles",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "04f70dd7-e169-4d1f-9772-2626bccf8054",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "3ffdae77-4d8f-4b9c-bca0-200689f3f81b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/roles",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"roles"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "5ef0a9e3-38ae-4956-8a72-19351a8d552c"
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "index",
+					"id": "b75ccb1f-29cf-4a95-ba7d-70ff2032f35b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"id": "562f7b94-032a-4456-b38b-27d046b06e02",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/users/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "id/confim",
+					"id": "2d21a9c3-ac75-4751-b697-e606d1489771",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"confirm\":1\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/users/1/confirm",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users",
+								"1",
+								"confirm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "id/roles",
+					"id": "eb22449b-cb62-4743-9e78-338a6855d41c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"role\":\"madrasah\",\r\n    \"value\":true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/users/1/roles",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users",
+								"1",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "destroy",
+					"id": "bee06c71-1b5c-4dcd-8725-b7ec6031856a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/users/5",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "83f6a519-50e3-4f3c-9f48-2f6e4af7cdb6"
+		},
+		{
+			"name": "user (current)",
+			"item": [
+				{
+					"name": "/",
+					"id": "ae1241b7-c116-4420-a29b-4a75e40e35f2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/user",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/",
+					"id": "367804cb-5aac-45e7-900b-717100cede76",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"oets\",\r\n    \"phone\":\"1234567890123\",\r\n    \"name\":\"USad M.Mis\",\r\n    \"abc\":121\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/user",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "4df3415e-a27e-401c-8c54-dc5ef4736c83"
+		},
+		{
+			"name": "ugt",
+			"item": [
+				{
+					"name": "pjgt",
+					"item": [
+						{
+							"name": "index",
+							"id": "a0a3223d-e04c-4b8f-9db7-e74b3ebddcf2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/ugt/pjgt",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ugt",
+										"pjgt"
+									],
+									"query": [
+										{
+											"key": "wilayah",
+											"value": "geger",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show",
+							"id": "d800e88b-d83d-4b75-9110-8828bec5da35",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/ugt/pjgt/16",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ugt",
+										"pjgt",
+										"16"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "store",
+							"id": "b95e1084-a1d6-4277-8deb-2831f6eb9d3e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":2342,\r\n    \"nama\":\"Usman Husnan\",\r\n    \"wilayah\":\"tew\",\r\n    \"jenis_lembaga\":\"adc\",\r\n    \"nama_lembaga\":\"def\",\r\n    \"sex\":\"P\",\r\n    \"email\":\"a@a.x\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/ugt/pjgt",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ugt",
+										"pjgt"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"id": "283fca04-64dd-46e1-922f-910b79c75a5f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":2342,\r\n    \"nama\":\"Usman Husna\",\r\n    \"wilayah\":\"tew\",\r\n    \"jenis_lembaga\":\"adc\",\r\n    \"nama_lembaga\":\"def\",\r\n    \"sex\":\"P\",\r\n    \"email\":\"a@a.xxx\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/ugt/pjgt/66",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ugt",
+										"pjgt",
+										"66"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"id": "c4cc141f-e405-48da-a5a0-e81e56a4a4dc",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/ugt/pjgt/6",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ugt",
+										"pjgt",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "lists/wilayah",
+							"id": "9d0e417f-f9df-4f4e-b4c8-d84eb6932005",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/ugt/pjgt/lists/wilayah",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ugt",
+										"pjgt",
+										"lists",
+										"wilayah"
+									],
+									"query": [
+										{
+											"key": "wilayah",
+											"value": "geger",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "lists/jenis-lembaga",
+							"id": "1261af04-9c19-4f21-8384-b3f8d570ecda",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/ugt/pjgt/lists/jenis-lembaga",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ugt",
+										"pjgt",
+										"lists",
+										"jenis-lembaga"
+									],
+									"query": [
+										{
+											"key": "wilayah",
+											"value": "geger",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "8c83230c-2123-4078-8cee-0bda14c9dd18"
+				},
+				{
+					"name": "gt",
+					"item": [
+						{
+							"name": "lists/th-ajaran-h",
+							"id": "28a2abda-d3cc-48b6-8358-31783d14ea4e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/ugt/gt/lists/th-ajaran-h",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ugt",
+										"gt",
+										"lists",
+										"th-ajaran-h"
+									],
+									"query": [
+										{
+											"key": "wilayah",
+											"value": "geger",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "index",
+							"id": "a5963640-cd5f-477c-bfcb-c6a3c4f86ec2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/ugt/gt?th_ajaran_h=1441-1442",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ugt",
+										"gt"
+									],
+									"query": [
+										{
+											"key": "th_ajaran_h",
+											"value": "1441-1442"
+										},
+										{
+											"key": "pjgt_id",
+											"value": "42",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show",
+							"id": "6406228b-1145-41a3-b973-d1b7f551fef0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/ugt/gt/53",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ugt",
+										"gt",
+										"53"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "store",
+							"id": "1627f1fe-ee92-4bc2-92ad-8e75b3b8e602",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"pjgt_id\":3,\r\n    \"santri_id\":\"8000\",\r\n    \"th_ajaran_h\":\"1234-1234\",\r\n    \"email\":\"a@a.x\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/ugt/gt",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ugt",
+										"gt"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"id": "72e3730d-a49a-4a5c-ab9d-1d0c3d03868b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"pjgt_id\":3,\r\n    \"santri_id\":\"8000\",\r\n    \"th_ajaran_h\":\"1234-1235\",\r\n    \"email\":\"a@aa.x\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/ugt/gt/177",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ugt",
+										"gt",
+										"177"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"id": "ab644614-92ab-4f3f-b84c-564b65a829b7",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/ugt/gt/5821",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ugt",
+										"gt",
+										"5821"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "3c0843cf-e8d2-4c91-986f-c17b69ce4b6e"
+				},
+				{
+					"name": "kas",
+					"item": [
+						{
+							"name": "index",
+							"id": "13c9901f-118b-4dfe-9a1e-a54ec90a90bb",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/ugt/kas",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ugt",
+										"kas"
+									],
+									"query": [
+										{
+											"key": "pjgt_id",
+											"value": "42",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show",
+							"id": "a1099d19-c97c-4952-82a5-6bcd6cb2d554",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/ugt/kas/53",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ugt",
+										"kas",
+										"53"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "store",
+							"id": "94654194-4de5-420d-a922-2a7b7f2ce844",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"gt_id\":100,\r\n    \"keperluan\":\"abc def\",\r\n    \"flag\":\"+\",\r\n    \"nominal\":\"1000\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/ugt/kas",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ugt",
+										"kas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"id": "675ca337-6cb5-4c43-b91f-7c9959b4707d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"gt_id\":\"\",\r\n    \"keperluan\":\"abc def\",\r\n    \"keterangan\":\"xxx5\",\r\n    \"flag\":\"+\",\r\n    \"nominal\":\"100000\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/ugt/kas/225",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ugt",
+										"kas",
+										"225"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"id": "e2824f3e-a65d-4f3b-9ce0-ce5785d62ade",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/ugt/kas/228",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"ugt",
+										"kas",
+										"228"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "40e70c22-6e1a-4a3a-a0a2-76346ca8d8ca"
+				}
+			],
+			"id": "ac0c0806-b66a-45c4-aeae-950fa91bfd16"
+		},
+		{
+			"name": "reports",
+			"item": [
+				{
+					"name": "izin-madrasah",
+					"id": "0ee1ee00-5f8b-417b-9caf-b51274be561a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/pdf"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/reports/izin-madrasah/view?id=12",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"reports",
+								"izin-madrasah",
+								"view"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "izin-pesantren",
+					"id": "7af6c6d0-6bfb-4562-a7f1-afa0379c5fe4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/pdf",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/reports/izin-pesantren/html?id=2000",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"reports",
+								"izin-pesantren",
+								"html"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "santri/standbook",
+					"id": "3ac8ff17-eb65-4056-9cf7-155d0d428f99",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/pdf",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/reports/santri/standbook/download?id=8000",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"reports",
+								"santri",
+								"standbook",
+								"download"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "8000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "santri/registrasi",
+					"id": "501ba0d3-d0b5-4208-9a71-0ce107600669",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/pdf",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/reports/santri/registrasi/download?id=8000",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"reports",
+								"santri",
+								"registrasi",
+								"download"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "8000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "santri/permohonan-berhenti",
+					"id": "55ecec3d-497f-4358-8d2e-397f1d46f1e7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/pdf",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/reports/santri/permohonan-berhenti/download?id=5616&wali_nama=asdf&wali_no_telepon=6285765675657&wali_bukti_diri=KTP&wali_bukti_diri_id=2345w&wali_status=wali&wali_hubungan=ayaj",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"reports",
+								"santri",
+								"permohonan-berhenti",
+								"download"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5616"
+								},
+								{
+									"key": "wali_nama",
+									"value": "asdf"
+								},
+								{
+									"key": "wali_no_telepon",
+									"value": "6285765675657"
+								},
+								{
+									"key": "wali_bukti_diri",
+									"value": "KTP"
+								},
+								{
+									"key": "wali_bukti_diri_id",
+									"value": "2345w",
+									"type": "text"
+								},
+								{
+									"key": "wali_status",
+									"value": "wali",
+									"type": "text"
+								},
+								{
+									"key": "wali_hubungan",
+									"value": "ayaj",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "santri/keterangan-berhenti",
+					"id": "5eb1360f-e6ec-4edf-8ced-6c1c50bcccf2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/pdf",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/reports/santri/keterangan-berhenti/download?id=8000",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"reports",
+								"santri",
+								"keterangan-berhenti",
+								"download"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "8000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "absensi/pekanan",
+					"id": "2d8b9d60-916c-41af-8b40-97577c5be6c0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/pdf",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/reports/absensi/pekanan/download?absensi=Sekolah&th_ajaran_h=1444-1445&tingkat_id=psc&kelas=1-a&tahun=1444&bulan=Safar&pekan=2&d1=9&d2=11&d3=22&d4=33&d5=11&d6=33&",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"reports",
+								"absensi",
+								"pekanan",
+								"download"
+							],
+							"query": [
+								{
+									"key": "absensi",
+									"value": "Sekolah"
+								},
+								{
+									"key": "th_ajaran_h",
+									"value": "1444-1445"
+								},
+								{
+									"key": "tingkat_id",
+									"value": "psc"
+								},
+								{
+									"key": "kelas",
+									"value": "1-a"
+								},
+								{
+									"key": "tahun",
+									"value": "1444"
+								},
+								{
+									"key": "bulan",
+									"value": "Safar"
+								},
+								{
+									"key": "pekan",
+									"value": "2"
+								},
+								{
+									"key": "d1",
+									"value": "9"
+								},
+								{
+									"key": "d2",
+									"value": "11"
+								},
+								{
+									"key": "d3",
+									"value": "22"
+								},
+								{
+									"key": "d4",
+									"value": "33"
+								},
+								{
+									"key": "d5",
+									"value": "11"
+								},
+								{
+									"key": "d6",
+									"value": "33"
+								},
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "absensi/bulanan",
+					"id": "ba043dc3-0ad4-4b01-b29e-b9044d7e4666",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/pdf",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/reports/absensi/bulanan/download?absensi=Musyawarah&th_ajaran_h=1443-1444&tingkat_id=ibt&kelas=1-a&tahun=1444&bulan=Safar&",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"reports",
+								"absensi",
+								"bulanan",
+								"download"
+							],
+							"query": [
+								{
+									"key": "absensi",
+									"value": "Musyawarah"
+								},
+								{
+									"key": "th_ajaran_h",
+									"value": "1443-1444"
+								},
+								{
+									"key": "tingkat_id",
+									"value": "ibt"
+								},
+								{
+									"key": "kelas",
+									"value": "1-a"
+								},
+								{
+									"key": "tahun",
+									"value": "1444"
+								},
+								{
+									"key": "bulan",
+									"value": "Safar"
+								},
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ugt/surat-tugas",
+					"id": "ab128abb-9aff-4948-920b-493819160336",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/pdf",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/reports/ugt/surat-tugas/download?id=100",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"reports",
+								"ugt",
+								"surat-tugas",
+								"download"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "100",
+									"description": "gt id"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ugt/kuitansi",
+					"id": "91412289-bac7-4e71-a23b-a0f6043dca14",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/pdf",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/reports/ugt/kuitansi/download?id=92",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"reports",
+								"ugt",
+								"kuitansi",
+								"download"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "92",
+									"description": "kas id"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "iuran-card",
+					"id": "1d00b519-35a9-419e-b257-c52af1cfd6fc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/pdf",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/reports/iuran-card/download?santri_id=7690&th_ajaran_h=1441-1442",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"reports",
+								"iuran-card",
+								"download"
+							],
+							"query": [
+								{
+									"key": "santri_id",
+									"value": "7690"
+								},
+								{
+									"key": "th_ajaran_h",
+									"value": "1441-1442"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "iuran-kuitansi",
+					"id": "a3b6a842-7f8f-49f3-a170-61dfd71eb236",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/pdf",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/reports/iuran-kuitansi/html?santri_id=7690&th_ajaran_h=1441-1442",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"reports",
+								"iuran-kuitansi",
+								"html"
+							],
+							"query": [
+								{
+									"key": "santri_id",
+									"value": "7690"
+								},
+								{
+									"key": "th_ajaran_h",
+									"value": "1441-1442"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "iuran-cover",
+					"id": "c64becb7-d9ac-4aaa-b198-ad6c7faca020",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/pdf",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/reports/iuran-cover/download?id=7690",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"reports",
+								"iuran-cover",
+								"download"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "7690"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "a0fc3592-753b-4bdc-b4ec-adec43f282e8"
+		},
+		{
+			"name": "test",
+			"item": [
+				{
+					"name": "pdf",
+					"id": "4e0d93a4-ee98-46b6-8e8f-f3717ca1f465",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/test/pdf",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"test",
+								"pdf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "excel write",
+					"id": "7778ebf2-b0f0-4c7f-bd9e-01cfd5cc0f8c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/test/excel/write",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"test",
+								"excel",
+								"write"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "excel read",
+					"id": "5a5fb6ce-f834-404a-89cf-35fc6552c615",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/test/excel/read",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"test",
+								"excel",
+								"read"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "to-db",
+					"id": "e379a760-4bee-461b-8063-45f2e3c6e6b1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nilai",
+									"type": "file",
+									"fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
+									"filesNotInWorkingDirectory": [
+										"/C:/Users/idsantri/Documents/sampel.xlsx"
+									],
+									"src": "/C:/Users/idsantri/Documents/sampel.xlsx"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/test/excel/to-db",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"test",
+								"excel",
+								"to-db"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "927fdeec-a5ae-4a87-8875-83d09be81332"
+		},
+		{
+			"name": "index",
+			"id": "57a3c858-6cd6-4b93-8b29-4c53b0b85e35",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "33b0b9f8-711d-402a-a4a4-b1380651c4b8",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "890a7eae-5474-4ca6-9a2f-7c6e7c7a9acc",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
