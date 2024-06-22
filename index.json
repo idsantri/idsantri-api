@@ -3,7 +3,7 @@
   "info": {
     "version": "1.0.0",
     "title": "ID Santri API",
-    "description": "API Admin."
+    "description": "API Admin"
   },
   "paths": {
     "/example": {
