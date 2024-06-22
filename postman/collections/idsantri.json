@@ -10,7 +10,7 @@
 			"name": "setup",
 			"item": [
 				{
-					"name": "1 migrate",
+					"name": "1-migrate",
 					"id": "09b20d24-9e24-4380-8072-fac98b7e6f02",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -38,7 +38,7 @@
 					"response": []
 				},
 				{
-					"name": "2 roles",
+					"name": "2-roles",
 					"id": "d5421c16-4007-4fe7-9f0b-a114e1759e00",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -66,7 +66,7 @@
 					"response": []
 				},
 				{
-					"name": "3 functions",
+					"name": "3-functions",
 					"id": "327c7baa-cb53-431b-b1dc-20dec68acc45",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -94,7 +94,7 @@
 					"response": []
 				},
 				{
-					"name": "3 views",
+					"name": "3-views",
 					"id": "f5a96b00-004c-47d6-a3b4-89bdfe9eaac7",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -122,7 +122,7 @@
 					"response": []
 				},
 				{
-					"name": "4 triggers",
+					"name": "4-triggers",
 					"id": "d78b1d30-72e3-4af8-9032-745365b3a026",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -149,7 +149,7 @@
 					"response": []
 				},
 				{
-					"name": "5 procedures",
+					"name": "5-procedures",
 					"id": "e9aa36db-0fbb-4b9b-afe2-53aeb2614ed6",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
