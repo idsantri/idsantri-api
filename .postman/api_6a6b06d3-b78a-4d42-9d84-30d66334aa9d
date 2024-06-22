@@ -14,8 +14,6 @@ files[] = {"id":"23593345-c93a5599-a27e-44ba-8282-f06fe14851af","path":"idsantri
 [config.relations.collections.metaData]
 
 [config.relations.apiDefinition]
-files[] = {"path":"index.json","metaData":{}}
 
 [config.relations.apiDefinition.metaData]
 type = openapi:3_1
-rootFiles[] = index.json
