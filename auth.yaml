@@ -3,23 +3,42 @@ info:
   version: 1.0.0
   title: Example API
   description: This is an example OpenAPI 3.0 YAML template
+servers:
+  - url: http://localhost:8000/admin
+  - url: https://demo.idsantri.my.id/admin
 paths:
-  /example:
-    get:
-      summary: Get example resource
-      responses:
-        '200':
-          description: Successful operation
+  /admin/login:
     post:
-      summary: Create example resource files
+      summary: attempt login
       requestBody:
         content:
           application/json:
             schema:
               type: object
               properties:
-                name:
+                login:
+                  type: string
+                password:
+                  type: string
+              required:
+                - "login"
+                - "password"
+      responses:
+        201:
+          description: Resource created
+        401:
+          description: gagal
+  /admin/register:
+    post:
+      summary: attempt registrasi
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
                   type: string
       responses:
-        '201':
-          description: Resource created
+        201:
+          description: success registrasi
